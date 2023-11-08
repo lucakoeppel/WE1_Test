@@ -1,0 +1,122 @@
+/* Grundlegende Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Versteckte Elemente für die Anzeige-Steuerung */
+.hidden {
+    display: none;
+}
+
+/* Typografie */
+h1 {
+    color: #2b4ce6;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#history-section h2 {
+    color: #2b4ce6;
+    margin-bottom: 1em;
+}
+
+/* Buttons und interaktive Elemente */
+button {
+    background-color: #2b4ce6;
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a338b;
+}
+
+.hand {
+    background-color: #fff; 
+    color: #2b4ce6;
+    box-shadow: 0 8px 15px rgb(43 76 226 / 20%); 
+}
+
+
+/* Layout und Positionierung */
+#start-screen,
+#game-screen {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Spielresultat-Anzeige */
+#player-choice,
+#computer-choice {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+#player-choice {
+    background-color: #add8e6;
+}
+
+#player-choice:hover {
+    transform: scale(1.1);
+}
+
+#computer-choice {
+    background-color: #90ee90;
+}
+
+#computer-choice:hover {
+    transform: scale(1.1);
+}
+
+#versus {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+/* Verlaufseinträge */
+.history-entry {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+/* Scroll-Fenster für die Verlauf-Liste */
+#history-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#message-box {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    z-index: 1000;
+}

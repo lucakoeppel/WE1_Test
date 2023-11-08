@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Schere Stein Papier</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+
+    <!-- Hauptseite -->
+    <section id="start-screen">
+        <h1>Schere Stein Papier Brunnen Streichholz</h1>
+        <div id="ranking-list">
+          <!-- Die Spieler-Rangliste wird dynamisch von einem Script hier hinzugefügt -->
+        </div>
+        <input type="text" id="playerName" placeholder="Name eingeben" required>
+        <button id="startGame">Spiel starten</button>
+    </section>
+
+    <div id="message-box" style="display:none;"></div>
+
+    <!-- Spielinterface -->
+<section id="game-screen" style="display:none;">
+    <button id="backToStart">Zurück zum Hauptmenü</button>
+    <h2 id="playerNameDisplay">Spielername!</h2>
+    
+    <!-- Auswahl der Spielzüge -->
+    <div id="handSelection">
+        <button class="hand" data-hand="Schere">Schere</button>
+        <button class="hand" data-hand="Stein">Stein</button>
+        <button class="hand" data-hand="Papier">Papier</button>
+        <button class="hand" data-hand="Brunnen">Brunnen</button>
+        <button class="hand" data-hand="Streichholz">Streichholz</button>
+    </div>
+
+    
+    <!-- Spielresultate -->
+    <div id="game-result">
+        <div id="player-choice"> <!-- Zeigt die Wahl des Spielers an -->
+            <!-- Die Auswahl des Spielers wird hier via JavaScript eingesetzt -->
+        </div>
+        <div id="versus">vs.</div> <!-- Zeichen für den Wettkampf -->
+        <div id="computer-choice"> <!-- Zeigt die Wahl des Computers an -->
+            <!-- Die Auswahl des Computers wird hier via JavaScript eingesetzt -->
+        </div>
+    </div>
+
+
+    <!-- Verlaufsbereich -->
+    <div id="history-section">
+        <h3>Spielverlauf</h3> 
+        <div id="history-list">
+            <!-- Der Verlauf der Spiele wird hier durch ein Script eingefügt -->
+        </div>
+    </div>
+</section>
+</body>
+</html>
